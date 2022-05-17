@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3AE3D6328295B3200923A17 /* CalcFi_InterfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE3D6228295B3200923A17 /* CalcFi_InterfaceApp.swift */; };
+		F3AE3D6528295B3200923A17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE3D6428295B3200923A17 /* ContentView.swift */; };
+		F3AE3D6728295B3400923A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3AE3D6628295B3400923A17 /* Assets.xcassets */; };
+		F3AE3D6A28295B3400923A17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3AE3D6928295B3400923A17 /* Preview Assets.xcassets */; };
+		F3AE3D7428295B3400923A17 /* CalcFi_InterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE3D7328295B3400923A17 /* CalcFi_InterfaceTests.swift */; };
+		F3AE3D7E28295B3400923A17 /* CalcFi_InterfaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE3D7D28295B3400923A17 /* CalcFi_InterfaceUITests.swift */; };
+		F3AE3D8028295B3400923A17 /* CalcFi_InterfaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE3D7F28295B3400923A17 /* CalcFi_InterfaceUITestsLaunchTests.swift */; };
+		F3AE3D8D282AB78800923A17 /* SimulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE3D8C282AB78800923A17 /* SimulationsView.swift */; };
+		F3AE3D92282ABAAC00923A17 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE3D91282ABAAC00923A17 /* Simulation.swift */; };
+		F3C7193F282E8A8300BDA3BB /* SimulationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7193E282E8A8300BDA3BB /* SimulationFormView.swift */; };
+		F3C71941282E8B3200BDA3BB /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C71940282E8B3200BDA3BB /* FormView.swift */; };
+		F3C71943282E8DA400BDA3BB /* TapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C71942282E8DA400BDA3BB /* TapView.swift */; };
+		F3C7194528301CA400BDA3BB /* SimulationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194428301CA400BDA3BB /* SimulationData.swift */; };
+		F3C7194828301F5200BDA3BB /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194728301F5200BDA3BB /* Price.swift */; };
+		F3C7194A28301F5A00BDA3BB /* Sac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194928301F5A00BDA3BB /* Sac.swift */; };
+		F3C7194C28301F6800BDA3BB /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194B28301F6800BDA3BB /* Table.swift */; };
+		F3C7194E283023A400BDA3BB /* SimulationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194D283023A400BDA3BB /* SimulationDetailView.swift */; };
+		F3FBD9FE28309ADD00E35CF6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBD9FD28309ADD00E35CF6 /* Theme.swift */; };
+		F3FBDA0128309D2C00E35CF6 /* SimulationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBDA0028309D2C00E35CF6 /* SimulationCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3AE3D7028295B3400923A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3AE3D5728295B3200923A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3AE3D5E28295B3200923A17;
+			remoteInfo = "CalcFi-Interface";
+		};
+		F3AE3D7A28295B3400923A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3AE3D5728295B3200923A17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3AE3D5E28295B3200923A17;
+			remoteInfo = "CalcFi-Interface";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3AE3D5F28295B3200923A17 /* CalcFi-Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalcFi-Interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3AE3D6228295B3200923A17 /* CalcFi_InterfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcFi_InterfaceApp.swift; sourceTree = "<group>"; };
+		F3AE3D6428295B3200923A17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3AE3D6628295B3400923A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3AE3D6928295B3400923A17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3AE3D6F28295B3400923A17 /* CalcFi-InterfaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalcFi-InterfaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3AE3D7328295B3400923A17 /* CalcFi_InterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcFi_InterfaceTests.swift; sourceTree = "<group>"; };
+		F3AE3D7928295B3400923A17 /* CalcFi-InterfaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalcFi-InterfaceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3AE3D7D28295B3400923A17 /* CalcFi_InterfaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcFi_InterfaceUITests.swift; sourceTree = "<group>"; };
+		F3AE3D7F28295B3400923A17 /* CalcFi_InterfaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcFi_InterfaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3AE3D8C282AB78800923A17 /* SimulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationsView.swift; sourceTree = "<group>"; };
+		F3AE3D91282ABAAC00923A17 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		F3C7193E282E8A8300BDA3BB /* SimulationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationFormView.swift; sourceTree = "<group>"; };
+		F3C71940282E8B3200BDA3BB /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		F3C71942282E8DA400BDA3BB /* TapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapView.swift; sourceTree = "<group>"; };
+		F3C7194428301CA400BDA3BB /* SimulationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationData.swift; sourceTree = "<group>"; };
+		F3C7194728301F5200BDA3BB /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		F3C7194928301F5A00BDA3BB /* Sac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sac.swift; sourceTree = "<group>"; };
+		F3C7194B28301F6800BDA3BB /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		F3C7194D283023A400BDA3BB /* SimulationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDetailView.swift; sourceTree = "<group>"; };
+		F3FBD9FD28309ADD00E35CF6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F3FBDA0028309D2C00E35CF6 /* SimulationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3AE3D5C28295B3200923A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AE3D6C28295B3400923A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AE3D7628295B3400923A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3AE3D5628295B3200923A17 = {
+			isa = PBXGroup;
+			children = (
+				F3AE3D6128295B3200923A17 /* CalcFi-Interface */,
+				F3AE3D7228295B3400923A17 /* CalcFi-InterfaceTests */,
+				F3AE3D7C28295B3400923A17 /* CalcFi-InterfaceUITests */,
+				F3AE3D6028295B3200923A17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3AE3D6028295B3200923A17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3AE3D5F28295B3200923A17 /* CalcFi-Interface.app */,
+				F3AE3D6F28295B3400923A17 /* CalcFi-InterfaceTests.xctest */,
+				F3AE3D7928295B3400923A17 /* CalcFi-InterfaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3AE3D6128295B3200923A17 /* CalcFi-Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F3AE3D90282ABA6A00923A17 /* Models */,
+				F3C7194D283023A400BDA3BB /* SimulationDetailView.swift */,
+				F3C7193E282E8A8300BDA3BB /* SimulationFormView.swift */,
+				F3AE3D8C282AB78800923A17 /* SimulationsView.swift */,
+				F3AE3D6228295B3200923A17 /* CalcFi_InterfaceApp.swift */,
+				F3AE3D6428295B3200923A17 /* ContentView.swift */,
+				F3AE3D6628295B3400923A17 /* Assets.xcassets */,
+				F3AE3D6828295B3400923A17 /* Preview Content */,
+				F3C71940282E8B3200BDA3BB /* FormView.swift */,
+				F3C71942282E8DA400BDA3BB /* TapView.swift */,
+				F3FBDA0028309D2C00E35CF6 /* SimulationCardView.swift */,
+			);
+			path = "CalcFi-Interface";
+			sourceTree = "<group>";
+		};
+		F3AE3D6828295B3400923A17 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F3AE3D6928295B3400923A17 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3AE3D7228295B3400923A17 /* CalcFi-InterfaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3AE3D7328295B3400923A17 /* CalcFi_InterfaceTests.swift */,
+			);
+			path = "CalcFi-InterfaceTests";
+			sourceTree = "<group>";
+		};
+		F3AE3D7C28295B3400923A17 /* CalcFi-InterfaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3AE3D7D28295B3400923A17 /* CalcFi_InterfaceUITests.swift */,
+				F3AE3D7F28295B3400923A17 /* CalcFi_InterfaceUITestsLaunchTests.swift */,
+			);
+			path = "CalcFi-InterfaceUITests";
+			sourceTree = "<group>";
+		};
+		F3AE3D90282ABA6A00923A17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3C7194628301F3E00BDA3BB /* Tables */,
+				F3AE3D91282ABAAC00923A17 /* Simulation.swift */,
+				F3C7194428301CA400BDA3BB /* SimulationData.swift */,
+				F3FBD9FD28309ADD00E35CF6 /* Theme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3C7194628301F3E00BDA3BB /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				F3C7194728301F5200BDA3BB /* Price.swift */,
+				F3C7194928301F5A00BDA3BB /* Sac.swift */,
+				F3C7194B28301F6800BDA3BB /* Table.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3AE3D5E28295B3200923A17 /* CalcFi-Interface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3AE3D8328295B3400923A17 /* Build configuration list for PBXNativeTarget "CalcFi-Interface" */;
+			buildPhases = (
+				F3AE3D5B28295B3200923A17 /* Sources */,
+				F3AE3D5C28295B3200923A17 /* Frameworks */,
+				F3AE3D5D28295B3200923A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CalcFi-Interface";
+			productName = "CalcFi-Interface";
+			productReference = F3AE3D5F28295B3200923A17 /* CalcFi-Interface.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3AE3D6E28295B3400923A17 /* CalcFi-InterfaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3AE3D8628295B3400923A17 /* Build configuration list for PBXNativeTarget "CalcFi-InterfaceTests" */;
+			buildPhases = (
+				F3AE3D6B28295B3400923A17 /* Sources */,
+				F3AE3D6C28295B3400923A17 /* Frameworks */,
+				F3AE3D6D28295B3400923A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3AE3D7128295B3400923A17 /* PBXTargetDependency */,
+			);
+			name = "CalcFi-InterfaceTests";
+			productName = "CalcFi-InterfaceTests";
+			productReference = F3AE3D6F28295B3400923A17 /* CalcFi-InterfaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3AE3D7828295B3400923A17 /* CalcFi-InterfaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3AE3D8928295B3400923A17 /* Build configuration list for PBXNativeTarget "CalcFi-InterfaceUITests" */;
+			buildPhases = (
+				F3AE3D7528295B3400923A17 /* Sources */,
+				F3AE3D7628295B3400923A17 /* Frameworks */,
+				F3AE3D7728295B3400923A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3AE3D7B28295B3400923A17 /* PBXTargetDependency */,
+			);
+			name = "CalcFi-InterfaceUITests";
+			productName = "CalcFi-InterfaceUITests";
+			productReference = F3AE3D7928295B3400923A17 /* CalcFi-InterfaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3AE3D5728295B3200923A17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F3AE3D5E28295B3200923A17 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					F3AE3D6E28295B3400923A17 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = F3AE3D5E28295B3200923A17;
+					};
+					F3AE3D7828295B3400923A17 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = F3AE3D5E28295B3200923A17;
+					};
+				};
+			};
+			buildConfigurationList = F3AE3D5A28295B3200923A17 /* Build configuration list for PBXProject "CalcFi-Interface" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3AE3D5628295B3200923A17;
+			productRefGroup = F3AE3D6028295B3200923A17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3AE3D5E28295B3200923A17 /* CalcFi-Interface */,
+				F3AE3D6E28295B3400923A17 /* CalcFi-InterfaceTests */,
+				F3AE3D7828295B3400923A17 /* CalcFi-InterfaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3AE3D5D28295B3200923A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AE3D6A28295B3400923A17 /* Preview Assets.xcassets in Resources */,
+				F3AE3D6728295B3400923A17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AE3D6D28295B3400923A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AE3D7728295B3400923A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3AE3D5B28295B3200923A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C71943282E8DA400BDA3BB /* TapView.swift in Sources */,
+				F3FBDA0128309D2C00E35CF6 /* SimulationCardView.swift in Sources */,
+				F3C7194A28301F5A00BDA3BB /* Sac.swift in Sources */,
+				F3AE3D6528295B3200923A17 /* ContentView.swift in Sources */,
+				F3C7194528301CA400BDA3BB /* SimulationData.swift in Sources */,
+				F3FBD9FE28309ADD00E35CF6 /* Theme.swift in Sources */,
+				F3C71941282E8B3200BDA3BB /* FormView.swift in Sources */,
+				F3AE3D92282ABAAC00923A17 /* Simulation.swift in Sources */,
+				F3C7194828301F5200BDA3BB /* Price.swift in Sources */,
+				F3C7193F282E8A8300BDA3BB /* SimulationFormView.swift in Sources */,
+				F3C7194E283023A400BDA3BB /* SimulationDetailView.swift in Sources */,
+				F3AE3D6328295B3200923A17 /* CalcFi_InterfaceApp.swift in Sources */,
+				F3AE3D8D282AB78800923A17 /* SimulationsView.swift in Sources */,
+				F3C7194C28301F6800BDA3BB /* Table.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AE3D6B28295B3400923A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AE3D7428295B3400923A17 /* CalcFi_InterfaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AE3D7528295B3400923A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3AE3D8028295B3400923A17 /* CalcFi_InterfaceUITestsLaunchTests.swift in Sources */,
+				F3AE3D7E28295B3400923A17 /* CalcFi_InterfaceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3AE3D7128295B3400923A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3AE3D5E28295B3200923A17 /* CalcFi-Interface */;
+			targetProxy = F3AE3D7028295B3400923A17 /* PBXContainerItemProxy */;
+		};
+		F3AE3D7B28295B3400923A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3AE3D5E28295B3200923A17 /* CalcFi-Interface */;
+			targetProxy = F3AE3D7A28295B3400923A17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F3AE3D8128295B3400923A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3AE3D8228295B3400923A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3AE3D8428295B3400923A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CalcFi-Interface/Preview Content\"";
+				DEVELOPMENT_TEAM = 2P65JA735T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.milenaalcantara.CalcFi-Interface";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3AE3D8528295B3400923A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CalcFi-Interface/Preview Content\"";
+				DEVELOPMENT_TEAM = 2P65JA735T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.milenaalcantara.CalcFi-Interface";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3AE3D8728295B3400923A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2P65JA735T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.milenaalcantara.CalcFi-InterfaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalcFi-Interface.app/CalcFi-Interface";
+			};
+			name = Debug;
+		};
+		F3AE3D8828295B3400923A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2P65JA735T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.milenaalcantara.CalcFi-InterfaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalcFi-Interface.app/CalcFi-Interface";
+			};
+			name = Release;
+		};
+		F3AE3D8A28295B3400923A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2P65JA735T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.milenaalcantara.CalcFi-InterfaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CalcFi-Interface";
+			};
+			name = Debug;
+		};
+		F3AE3D8B28295B3400923A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2P65JA735T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.milenaalcantara.CalcFi-InterfaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CalcFi-Interface";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3AE3D5A28295B3200923A17 /* Build configuration list for PBXProject "CalcFi-Interface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AE3D8128295B3400923A17 /* Debug */,
+				F3AE3D8228295B3400923A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3AE3D8328295B3400923A17 /* Build configuration list for PBXNativeTarget "CalcFi-Interface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AE3D8428295B3400923A17 /* Debug */,
+				F3AE3D8528295B3400923A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3AE3D8628295B3400923A17 /* Build configuration list for PBXNativeTarget "CalcFi-InterfaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AE3D8728295B3400923A17 /* Debug */,
+				F3AE3D8828295B3400923A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3AE3D8928295B3400923A17 /* Build configuration list for PBXNativeTarget "CalcFi-InterfaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3AE3D8A28295B3400923A17 /* Debug */,
+				F3AE3D8B28295B3400923A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3AE3D5728295B3200923A17 /* Project object */;
+}
