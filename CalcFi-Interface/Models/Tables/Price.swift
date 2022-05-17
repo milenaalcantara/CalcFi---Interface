@@ -8,7 +8,7 @@
 import Foundation
 
 
-class PRICE: Table {
+class PRICE: TableBase {
     let tableName = "PRICE"
 
     var parcelValue: Double = 0.0

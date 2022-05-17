@@ -12,7 +12,7 @@ struct Simulation: Identifiable {
     var id = UUID()
     var name: String = ""
     
-    var simulationTable: Table = PRICE(
+    var simulationTable: TableBase = PRICE(
         financedLiqValue: 0.0,
         interestRate: 0.0,
         numberOfParcel: 0

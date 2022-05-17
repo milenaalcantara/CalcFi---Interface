@@ -13,6 +13,7 @@ struct SimulationsView: View {
     
     @State private var isNewSimulation = false
 //    @State private var isAddingNewSimulation = false
+    @State private var showingModalView = false
     
     var body: some View {
         List {
@@ -26,6 +27,7 @@ struct SimulationsView: View {
         .toolbar {
             Button(action: {
                 isNewSimulation = true
+//                showingModalView.toggle()
             }) {
                 Image(systemName: "plus")
             }

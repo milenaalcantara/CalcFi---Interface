@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SimulationFormView: View {
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var title: String = ""
     let tables = ["PRICE", "SAC"]
     @State private var selectedTable = "PRICE"
@@ -15,13 +17,13 @@ struct SimulationFormView: View {
     @State private var interestRate: Double = 0.0
     @State private var numberOfParcel: Int = 0
     
-    @State private var newSimulation = Table(financedLiqValue: 0.0, interestRate: 0.0, numberOfParcel: 0)
+    @State private var newSimulation = TableBase(financedLiqValue: 0.0, interestRate: 0.0, numberOfParcel: 0)
     @State private var isAddingNewSimulation = false
     
     @FocusState private var fieldIsFocused: Bool
     @FocusState private var stepperIsFocused: Bool
     
-    func runTable() -> Table {
+    func runTable() -> TableBase {
         switch selectedTable {
             case "PRICE":
                 let price = PRICE(financedLiqValue: liqValue, interestRate: interestRate, numberOfParcel: numberOfParcel)
@@ -37,7 +39,7 @@ struct SimulationFormView: View {
                 print("Opção inválida!")
         }
         
-        return Table(financedLiqValue: 0.0, interestRate: 0.0, numberOfParcel: 0)
+        return TableBase(financedLiqValue: 0.0, interestRate: 0.0, numberOfParcel: 0)
     }
     
     
@@ -104,19 +106,6 @@ struct SimulationFormView: View {
                     Text("Selecione a tabela base")
                 }
                 
-                Section {
-                    Button(action: {
-                        newSimulation = runTable()
-                        isAddingNewSimulation = true
-                    }) {
-                        Text("Calcular")
-                            .frame(maxWidth: .infinity, alignment: .center)
-                    }
-                    .accessibilityLabel("Calcular nova simulação")
-                    .foregroundColor(.orange)
-                    .buttonStyle(.automatic)
-                    .buttonBorderShape(.roundedRectangle)
-                }
             }
             .navigationTitle("Nova Simulação")
             .toolbar {
@@ -125,6 +114,25 @@ struct SimulationFormView: View {
                         fieldIsFocused = false
                         stepperIsFocused = false
                     }
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button (action: {
+                        newSimulation = runTable()
+                        isAddingNewSimulation = true
+                        dismiss()
+                    }, label: {
+                        Text("Calcular")
+                    })
+                }
+                
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button (action: {
+                        dismiss()
+                    }, label: {
+                        Text("Cancelar")
+                    })
                 }
             }
         }

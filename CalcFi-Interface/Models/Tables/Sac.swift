@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SAC: Table {
+class SAC: TableBase {
     let tableName = "SAC"
     
     var parcelValues: [Double] = []

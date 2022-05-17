@@ -22,10 +22,11 @@
 		F3C7194528301CA400BDA3BB /* SimulationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194428301CA400BDA3BB /* SimulationData.swift */; };
 		F3C7194828301F5200BDA3BB /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194728301F5200BDA3BB /* Price.swift */; };
 		F3C7194A28301F5A00BDA3BB /* Sac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194928301F5A00BDA3BB /* Sac.swift */; };
-		F3C7194C28301F6800BDA3BB /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194B28301F6800BDA3BB /* Table.swift */; };
+		F3C7194C28301F6800BDA3BB /* TableBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194B28301F6800BDA3BB /* TableBase.swift */; };
 		F3C7194E283023A400BDA3BB /* SimulationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194D283023A400BDA3BB /* SimulationDetailView.swift */; };
 		F3FBD9FE28309ADD00E35CF6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBD9FD28309ADD00E35CF6 /* Theme.swift */; };
 		F3FBDA0128309D2C00E35CF6 /* SimulationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBDA0028309D2C00E35CF6 /* SimulationCardView.swift */; };
+		F3FBDA052833CBEB00E35CF6 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBDA042833CBEB00E35CF6 /* SimulationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,10 +65,11 @@
 		F3C7194428301CA400BDA3BB /* SimulationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationData.swift; sourceTree = "<group>"; };
 		F3C7194728301F5200BDA3BB /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		F3C7194928301F5A00BDA3BB /* Sac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sac.swift; sourceTree = "<group>"; };
-		F3C7194B28301F6800BDA3BB /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		F3C7194B28301F6800BDA3BB /* TableBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBase.swift; sourceTree = "<group>"; };
 		F3C7194D283023A400BDA3BB /* SimulationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDetailView.swift; sourceTree = "<group>"; };
 		F3FBD9FD28309ADD00E35CF6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F3FBDA0028309D2C00E35CF6 /* SimulationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationCardView.swift; sourceTree = "<group>"; };
+		F3FBDA042833CBEB00E35CF6 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				F3C71940282E8B3200BDA3BB /* FormView.swift */,
 				F3C71942282E8DA400BDA3BB /* TapView.swift */,
 				F3FBDA0028309D2C00E35CF6 /* SimulationCardView.swift */,
+				F3FBDA042833CBEB00E35CF6 /* SimulationView.swift */,
 			);
 			path = "CalcFi-Interface";
 			sourceTree = "<group>";
@@ -174,7 +177,7 @@
 			children = (
 				F3C7194728301F5200BDA3BB /* Price.swift */,
 				F3C7194928301F5A00BDA3BB /* Sac.swift */,
-				F3C7194B28301F6800BDA3BB /* Table.swift */,
+				F3C7194B28301F6800BDA3BB /* TableBase.swift */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -321,8 +324,9 @@
 				F3C7193F282E8A8300BDA3BB /* SimulationFormView.swift in Sources */,
 				F3C7194E283023A400BDA3BB /* SimulationDetailView.swift in Sources */,
 				F3AE3D6328295B3200923A17 /* CalcFi_InterfaceApp.swift in Sources */,
+				F3FBDA052833CBEB00E35CF6 /* SimulationView.swift in Sources */,
 				F3AE3D8D282AB78800923A17 /* SimulationsView.swift in Sources */,
-				F3C7194C28301F6800BDA3BB /* Table.swift in Sources */,
+				F3C7194C28301F6800BDA3BB /* TableBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

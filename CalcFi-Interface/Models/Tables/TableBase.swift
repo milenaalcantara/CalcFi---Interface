@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Table {
+class TableBase {
     
 //    let tableName = "NAME"
 
@@ -43,7 +43,7 @@ class Table {
 //    }
 }
 
-extension Table {
+extension TableBase {
     func calcRateValue(debitValue: Double, interestRate: Double) -> Double {
         let rateValue = debitValue * interestRate
         interestValuesPerParcel.append(rateValue)
