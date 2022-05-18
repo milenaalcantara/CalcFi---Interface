@@ -17,7 +17,7 @@ struct SimulationCardView: View {
 
                 Spacer()
 
-                Text("R$ \(simulation.simulationTable.financedLiqValue.formatted(.number))")
+                Text("R$ \(simulation.table.financedLiqValue.formatted(.number))")
                     .font(.caption)
 //            }
 //

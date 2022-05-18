@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 class SimuationData: ObservableObject {
@@ -19,21 +20,19 @@ class SimuationData: ObservableObject {
         simulations.append(simulation)
     }
     
-//    func exists(_ simulation: Simulation) -> Bool {
-//        simulations.contains(simulation)
-//    }
+    func exists(_ simulation: Simulation) -> Bool {
+        simulations.contains(where: { $0.id == simulation.id })
+    }
     
-//    func choiceSimulation(simulation: Simulation)
-    
-//    func choiceSimulation(simulation: Simulation) -> Binding<[Simulation]> {
-//        Binding<[Simulation]> {
-//            self.simulations
-//        } set: { simulations in
-//            for simulation in simulations {
-//                if let index = self.simulations.firstIndex(where: { $0.id == simulation.id }) {
-//                    self.simulations[index] = simulation
-//                }
-//            }
-//        }
-//    }
+    func choiceSimulation(simulation: Simulation) -> Binding<[Simulation]> {
+        Binding<[Simulation]> {
+            self.simulations
+        } set: { simulations in
+            for simulation in simulations {
+                if let index = self.simulations.firstIndex(where: { $0.id == simulation.id }) {
+                    self.simulations[index] = simulation
+                }
+            }
+        }
+    }
 }

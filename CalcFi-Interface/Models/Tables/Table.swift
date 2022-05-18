@@ -29,18 +29,6 @@ class Table {
         self.debitValues = []
         self.debitValues.append(financedLiqValue)
     }
-
-//    func printInitialValues() {
-//        print("valor líquido financiado: R$ \(self.financedLiqValue)")
-//        print("taxa de juros: R$ \(self.interestRate * 100)%")
-//        print("número de parcelas: \(self.numberOfParcel)")
-//    }
-
-    
-
-//    func run(){
-//        print("Classe Mãe")
-//    }
 }
 
 extension Table {

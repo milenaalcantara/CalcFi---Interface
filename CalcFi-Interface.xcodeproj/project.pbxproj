@@ -24,7 +24,6 @@
 		F3C7194A28301F5A00BDA3BB /* Sac.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194928301F5A00BDA3BB /* Sac.swift */; };
 		F3C7194C28301F6800BDA3BB /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194B28301F6800BDA3BB /* Table.swift */; };
 		F3C7194E283023A400BDA3BB /* SimulationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7194D283023A400BDA3BB /* SimulationDetailView.swift */; };
-		F3FBD9FE28309ADD00E35CF6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBD9FD28309ADD00E35CF6 /* Theme.swift */; };
 		F3FBDA0128309D2C00E35CF6 /* SimulationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBDA0028309D2C00E35CF6 /* SimulationCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +65,6 @@
 		F3C7194928301F5A00BDA3BB /* Sac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sac.swift; sourceTree = "<group>"; };
 		F3C7194B28301F6800BDA3BB /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		F3C7194D283023A400BDA3BB /* SimulationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationDetailView.swift; sourceTree = "<group>"; };
-		F3FBD9FD28309ADD00E35CF6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F3FBDA0028309D2C00E35CF6 /* SimulationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,7 +162,6 @@
 				F3C7194628301F3E00BDA3BB /* Tables */,
 				F3AE3D91282ABAAC00923A17 /* Simulation.swift */,
 				F3C7194428301CA400BDA3BB /* SimulationData.swift */,
-				F3FBD9FD28309ADD00E35CF6 /* Theme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,7 +311,6 @@
 				F3C7194A28301F5A00BDA3BB /* Sac.swift in Sources */,
 				F3AE3D6528295B3200923A17 /* ContentView.swift in Sources */,
 				F3C7194528301CA400BDA3BB /* SimulationData.swift in Sources */,
-				F3FBD9FE28309ADD00E35CF6 /* Theme.swift in Sources */,
 				F3C71941282E8B3200BDA3BB /* FormView.swift in Sources */,
 				F3AE3D92282ABAAC00923A17 /* Simulation.swift in Sources */,
 				F3C7194828301F5200BDA3BB /* Price.swift in Sources */,

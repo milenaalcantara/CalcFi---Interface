@@ -37,7 +37,6 @@ struct SimulationsView: View {
                 isNewSimulation = false
             }
         }
-        
     }
 }
 

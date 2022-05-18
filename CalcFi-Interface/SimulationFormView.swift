@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SimulationFormView: View {
+    @Environment(\.dismiss) private var dismiss
+    
+    @Binding var simulation: Simulation
+    
     @State private var title: String = ""
     let tables = ["PRICE", "SAC"]
     @State private var selectedTable = "PRICE"
@@ -47,24 +51,22 @@ struct SimulationFormView: View {
                 Section{
                     HStack {
                         Text("Título: ")
-                        TextField("Digite aqui...", text: $title)
+                        TextField("Digite aqui...", text: $simulation.name)
                             .disableAutocorrection(true)
-//                            .focused($fieldIsFocused)
                             .focused($stepperIsFocused)
                     }
                     
                     HStack {
                         Text("Valor: ")
-                        TextField("R$ 0,00", value: $liqValue, format: .currency(code: "BRL")) // Locale.current.currencyCode ??
+                        TextField("R$ 0,00", value: $simulation.table.financedLiqValue, format: .currency(code: "BRL")) // Locale.current.currencyCode ??
                             .disableAutocorrection(true)
                             .keyboardType(.decimalPad)
-//                            .focused($fieldIsFocused)
                             .focused($stepperIsFocused)
                     }
                     
                     HStack {
                         Text("Taxa a.m.: ")
-                        TextField("Digite aqui...", value: $interestRate, format: .percent)
+                        TextField("Digite aqui...", value: $simulation.table.interestRate, format: .percent)
                             .disableAutocorrection(true)
                             .keyboardType(.decimalPad)
 //                            .focused($fieldIsFocused)
@@ -74,11 +76,10 @@ struct SimulationFormView: View {
                     HStack {
                         Text("Nº Parcelas: ")
                         
-                        TextField("Digite aqui...", value: $numberOfParcel, format: .number)
+                        TextField("Digite aqui...", value: $simulation.table.numberOfParcel, format: .number)
                             .disableAutocorrection(true)
                             .keyboardType(.decimalPad)
                             .focused($fieldIsFocused)
-//                            .focused($stepperIsFocused)
                         
                         if (fieldIsFocused == false) {
                             Stepper("", value: $numberOfParcel, in: 0...360)
@@ -91,8 +92,6 @@ struct SimulationFormView: View {
                     Text("Preencha os valores")
                 }
                 
-                
-                
                 Section{
                     Picker("", selection: $selectedTable) {
                         ForEach(tables, id: \.self) {
@@ -104,26 +103,43 @@ struct SimulationFormView: View {
                     Text("Selecione a tabela base")
                 }
                 
-                Section {
-                    Button(action: {
-                        newSimulation = runTable()
-                        isAddingNewSimulation = true
-                    }) {
-                        Text("Calcular")
-                            .frame(maxWidth: .infinity, alignment: .center)
-                    }
-                    .accessibilityLabel("Calcular nova simulação")
-                    .foregroundColor(.orange)
-                    .buttonStyle(.automatic)
-                    .buttonBorderShape(.roundedRectangle)
-                }
+//                Section {
+//                    Button(action: {
+//                        newSimulation = runTable()
+//                        isAddingNewSimulation = true
+//                    }) {
+//                        Text("Calcular")
+//                            .frame(maxWidth: .infinity, alignment: .center)
+//                    }
+//                    .accessibilityLabel("Calcular nova simulação")
+//                    .foregroundColor(.orange)
+//                    .buttonStyle(.automatic)
+//                    .buttonBorderShape(.roundedRectangle)
+//                }
             }
             .navigationTitle("Nova Simulação")
             .toolbar {
-                ToolbarItemGroup(placement: .keyboard) {
+                ToolbarItem(placement: .keyboard) {
                     Button("Done") {
                         fieldIsFocused = false
                         stepperIsFocused = false
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Cancelar")
+                    }
+                }
+                
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Text("Calcular")
+                            .fontWeight(.bold)
                     }
                 }
             }
@@ -136,6 +152,6 @@ struct SimulationFormView: View {
 
 struct SimulationFormView_Previews: PreviewProvider {
     static var previews: some View {
-        SimulationFormView()
+        SimulationFormView(simulation: .constant(Simulation.sampleData[0]))
     }
 }
